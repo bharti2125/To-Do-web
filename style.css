@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #cb9435;
+}
+
+.container {
+  width: 90%;
+
+  max-width: 650px;
+  background: rgb(234, 234, 202);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #140f0f;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #140f0f;
+}
+
+button:hover {
+  background: #0a2849;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #211818;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+button.edit,
+button.delete {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.edit {
+  background: #ffc107;
+}
+
+button.delete {
+  background: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 15px;
+  }
+}
